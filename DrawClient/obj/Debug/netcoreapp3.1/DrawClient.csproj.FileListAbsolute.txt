@@ -1,0 +1,13 @@
+E:\MyProjects\Geometrical Frame\DrawClient\bin\Debug\netcoreapp3.1\DrawClient.exe
+E:\MyProjects\Geometrical Frame\DrawClient\bin\Debug\netcoreapp3.1\DrawClient.deps.json
+E:\MyProjects\Geometrical Frame\DrawClient\bin\Debug\netcoreapp3.1\DrawClient.runtimeconfig.json
+E:\MyProjects\Geometrical Frame\DrawClient\bin\Debug\netcoreapp3.1\DrawClient.runtimeconfig.dev.json
+E:\MyProjects\Geometrical Frame\DrawClient\bin\Debug\netcoreapp3.1\DrawClient.dll
+E:\MyProjects\Geometrical Frame\DrawClient\bin\Debug\netcoreapp3.1\DrawClient.pdb
+E:\MyProjects\Geometrical Frame\DrawClient\obj\Debug\netcoreapp3.1\DrawClient.csprojAssemblyReference.cache
+E:\MyProjects\Geometrical Frame\DrawClient\obj\Debug\netcoreapp3.1\DrawClient.AssemblyInfoInputs.cache
+E:\MyProjects\Geometrical Frame\DrawClient\obj\Debug\netcoreapp3.1\DrawClient.AssemblyInfo.cs
+E:\MyProjects\Geometrical Frame\DrawClient\obj\Debug\netcoreapp3.1\DrawClient.csproj.CoreCompileInputs.cache
+E:\MyProjects\Geometrical Frame\DrawClient\obj\Debug\netcoreapp3.1\DrawClient.dll
+E:\MyProjects\Geometrical Frame\DrawClient\obj\Debug\netcoreapp3.1\DrawClient.pdb
+E:\MyProjects\Geometrical Frame\DrawClient\obj\Debug\netcoreapp3.1\DrawClient.genruntimeconfig.cache

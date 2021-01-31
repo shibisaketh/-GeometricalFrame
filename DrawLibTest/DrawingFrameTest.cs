@@ -24,7 +24,19 @@ namespace DrawLibTest
 
             drawManager.addFrame(5, 6);
             Assert.IsNotNull(drawManager.getFrame());
-        }
+        } 
+        [Test]
+        public void ChangeFrameSize()
+        {
+            Assert.IsNull(drawManager.getFrame());  //No Frames now
+
+            drawManager.addFrame(5, 6);
+            Frame frame = drawManager.getFrame();
+            frame.updateLength(10);
+            frame.updateWidth(20);
+            Assert.AreEqual(drawManager.getFrame().Length, 10);
+            Assert.AreEqual(drawManager.getFrame().Width, 20);
+        }      
         [Test]
         public void SingleFrame()
         {

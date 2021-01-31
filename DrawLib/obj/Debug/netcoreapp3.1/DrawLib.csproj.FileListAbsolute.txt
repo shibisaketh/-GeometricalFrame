@@ -1,0 +1,9 @@
+E:\MyProjects\Geometrical Frame\DrawLib\bin\Debug\netcoreapp3.1\DrawLib.deps.json
+E:\MyProjects\Geometrical Frame\DrawLib\bin\Debug\netcoreapp3.1\DrawLib.dll
+E:\MyProjects\Geometrical Frame\DrawLib\bin\Debug\netcoreapp3.1\DrawLib.pdb
+E:\MyProjects\Geometrical Frame\DrawLib\obj\Debug\netcoreapp3.1\DrawLib.csprojAssemblyReference.cache
+E:\MyProjects\Geometrical Frame\DrawLib\obj\Debug\netcoreapp3.1\DrawLib.AssemblyInfoInputs.cache
+E:\MyProjects\Geometrical Frame\DrawLib\obj\Debug\netcoreapp3.1\DrawLib.AssemblyInfo.cs
+E:\MyProjects\Geometrical Frame\DrawLib\obj\Debug\netcoreapp3.1\DrawLib.csproj.CoreCompileInputs.cache
+E:\MyProjects\Geometrical Frame\DrawLib\obj\Debug\netcoreapp3.1\DrawLib.dll
+E:\MyProjects\Geometrical Frame\DrawLib\obj\Debug\netcoreapp3.1\DrawLib.pdb

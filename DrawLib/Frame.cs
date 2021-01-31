@@ -18,6 +18,14 @@ namespace DrawLib
             frameWidth = width;
             shapes = new Dictionary<int, IShape>();
         }
+        public void updateLength(double length)
+        {
+            frameLength = length;
+        }
+        public void updateWidth(double width)
+        {
+            frameWidth = width;
+        }
 
         internal bool isFitInsideFrame( IShape shape)
         {
@@ -64,15 +72,5 @@ namespace DrawLib
                 throw new Exception("Shape out of frame");
             return shapes.Count;
         }
-
-
-        public void updateLength( double length)
-        {
-            frameLength = length;
-        }                                                               
-        public void updateWidth( double width)
-        {
-            frameWidth = width;
-        }        
     }
 }
