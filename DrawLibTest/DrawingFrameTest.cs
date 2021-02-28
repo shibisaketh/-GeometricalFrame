@@ -4,7 +4,7 @@ using System;
 
 namespace DrawLibTest
 {
-    public class Tests
+    public class FrameTests
     {
         private DrawManager drawManager;
         [SetUp]
@@ -82,6 +82,21 @@ namespace DrawLibTest
             f.updateWidth(12);
             Assert.AreEqual(f.Width, 12);
         }
+
+        [Test]
+        public void ModifyFrameTest()
+        {
+            Assert.IsNull(drawManager.getFrame());  //No Frames now
+            drawManager.addFrame(15, 16);
+
+            Frame f = drawManager.getFrame();
+            Assert.AreEqual(f.Width, 16);
+
+            f.ModifyFrame(18, 19); //Should change frame
+            Assert.AreNotEqual(f.Length, 18);
+            Assert.AreNotEqual(f.Width, 19);
+        }
+
         [Test]
         public void FrameFlow()
         {
@@ -117,38 +132,5 @@ namespace DrawLibTest
                 Assert.IsTrue(false, "Exception occured");
             }
         }
-        [Test]
-        public void AddCircle()
-        {
-            drawManager.addFrame(10, 12);
-            IShape shape = new Circle(new Point(5, 5), 3);
-            Assert.AreEqual(1, drawManager.addShape(shape));
-        }
-        [Test]
-        public void Add2Circle()
-        {
-            drawManager.addFrame(50, 60);
-            IShape shape = new Circle(new Point(20, 28), 12);
-            Assert.AreEqual(1, drawManager.addShape(shape));
-            IShape shape2 = new Circle(new Point(7, 7), 6);
-            Assert.AreEqual(2, drawManager.addShape(shape2));
-
-        }
-        [Test]     
-        public void OutofFrame()
-        {
-            drawManager.addFrame(10, 10);
-            IShape shape = new Circle(new Point(2, 5), 16);
-            Assert.Throws<Exception>(() => drawManager.addShape(shape));
-        }    
-        public void AddSameCircle()
-        {
-            drawManager.addFrame(50, 60);
-            IShape shape = new Circle(new Point(20, 28), 12);
-            Assert.AreEqual(1, drawManager.addShape(shape));
-            IShape shape2 = new Circle(new Point(7, 7), 6);
-            Assert.AreEqual(2, drawManager.addShape(shape2));
-            IShape shape3 = new Circle(new Point(20, 28), 12);
-            Assert.AreEqual(2, drawManager.addShape(shape3)); //Not added, count not increesed
-        }    }
+    }
 }

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "DrawLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/DrawLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DrawLib.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DrawLib/1.0.0": {
+      "type": "project",
+      "path": "../DrawLib/DrawLib.csproj",
+      "msbuildProject": "../DrawLib/DrawLib.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "DrawLib >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\shibin.balachandran\\.nuget\\packages\\": {},
@@ -37,7 +56,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\MyProjects\\Geometrical Frame\\DrawLib\\DrawLib.csproj": {
+              "projectPath": "E:\\MyProjects\\Geometrical Frame\\DrawLib\\DrawLib.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -20,5 +20,32 @@ namespace DrawLib
                 throw new Exception("Frame is not added");
             return frame.addShape(shape);
         }
+
+        /// <summary>
+        /// This will be private and wont allow to access from outside
+        /// </summary>
+        /// <param name="shapeId"></param>
+        /// <returns></returns>
+        private IShape getShape(int shapeId)
+        {
+            if (frame is null)
+                throw new Exception("Frame is not added");
+            return frame.getShape(shapeId);
+        }    
+        public void MoveShape(int shapeId, Point centreToMove)
+        {
+            if (frame is null)
+                throw new Exception("Frame is not added");
+            frame.MoveShape(shapeId, centreToMove);
+        } 
+        public void ResizeShape(int shapeId, double factorX)
+        {
+            if (frame is null)
+                throw new Exception("Frame is not added");
+            if(factorX > 0)
+                frame.ResizeShape(shapeId, factorX);
+            else
+                throw new Exception("Invalid factorX");
+        }
     }
 }

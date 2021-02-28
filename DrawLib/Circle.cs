@@ -13,6 +13,13 @@ namespace DrawLib
             point = pt;
             radius = rad;
         }
+
+        public void Draw()
+        {
+            Console.WriteLine("Circle (" + point.x.ToString()+ ", " +
+                                point.y.ToString() + ")  Radius: "+ radius.ToString());
+        }
+
         public Point getCenter()
         {
             return point;
@@ -20,6 +27,25 @@ namespace DrawLib
         public double getRadius()
         {
             return radius;
+        }
+
+        public void Move(Point centreMoveToPoint)
+        {
+            if (centreMoveToPoint.x >= 0 && centreMoveToPoint.y >= 0)
+            {
+                point = centreMoveToPoint;
+                Console.WriteLine("Circle Moved");
+            }
+        }
+
+        public void Resize(double resizeFactor)
+        {
+            if (resizeFactor > 0)
+            {
+                radius *= resizeFactor;
+                Console.WriteLine("Circle Resized");
+            }
+            
         }
     }
 }
